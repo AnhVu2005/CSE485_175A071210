@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo form và cách điều khiển</title>
+  </head>
+  <body>
+    <table width="400" border="2" cellpadding="5" align="center">
+      <tr>
+        <th colspan="2">Phiếu đăng ký tham gia chương trình khuyến mãi</th>
+      </tr>
+      <tr>
+        <td>Họ tên</td>
+        <td><input type="text" name="Họ và tên" size="30" placeholder="Nhập họ tên"></td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td><input type="text" name="Địa chỉ" size="30" placeholder="Nhập địa chỉ"></td>
+      </tr>
+      <tr>
+        <td>Điện thoại</td>
+        <td><input type="number" name="Điện thoại" size="30" placeholder="Nhập số điện thoại"></td>
+      </tr>
+      <tr>
+        <td>Giới tính</td>
+        <td><input type="radio" name="gioitinh" id="nam">nam
+            <input type="radio" name="gioitinh" id="nữ">nữ
+        </td>
+      </tr>
+      <tr>
+        <td>Nghề nghiệp</td>
+        <td>
+          <select name="nghề nghiệp">
+            <option value="Bác sĩ">Bác sĩ</option>
+            <option value="Kỹ sư">Kỹ sư</option>
+            <option value="Giáo viên">Giáo viên</option>
+            <option value="Khác">Khác</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Chọn sản phẩm tham ra</td>
+        <td>
+          <input type="checkbox" name="Kem đánh răng" value="Kem đánh răng"> Kem đánh răng
+          <input type="checkbox" name="Bột giặt" value="Bột giặt ">Bột giặt
+          <input type="checkbox" name="Dầu gội đầu" value="Dầu gội đầu">Dầu gội đầu
+          <input type="checkbox" name="Sữa tắm" value="Sữa tắm">Sữa tắm
+        </td>
+      </tr>
+      <tr>
+        <td>Số người dự đoán tham ra</td>
+        <td><input type="number" name="Số người dự đoán tham ra" placeholder="Nhập số người dự đoán tham ra"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="ok" value="Đồng ý"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
