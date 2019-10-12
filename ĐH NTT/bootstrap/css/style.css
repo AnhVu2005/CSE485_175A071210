@@ -55,6 +55,8 @@
 .home .menu .navbar .navbar-nav{
   width: 100%;
   padding-left: 10px;
+  height: 100px;
+  
 }
 .home .menu .navbar .navbar-nav li{
   padding: 0;
@@ -82,11 +84,10 @@
 }
 .home .slide .slide-wrapper .triangle-wrapper{
   display: flex;
-    position: absolute;
-    justify-content: center;
-    width: 100%;
-    z-index: 3;
-    
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 3;
 }
 .home .slide .slide-wrapper .triangle-wrapper .triangle{
     width: 0;
@@ -128,8 +129,11 @@
     justify-content: flex-end;
 }
 .home .slide .line-slide .control-button .right{
-  width: 20%;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
 }
 .home .slide .huy-right{
   position: absolute;
@@ -147,7 +151,7 @@
 .home .slide .carousel-control-next{
   width: 85%;
 }
-.home .slide .carousel-control-prev{
+.home .slide .carousel-prev{
   width: 85%;
 }
 .home .slide .right i{
@@ -157,7 +161,7 @@
   margin: 0;
   padding: 0;
 }
- .carousel-inner::before{
+.carousel-inner::before{
   content: '';
     
 }
@@ -217,7 +221,7 @@
   padding-right: 6px;
 }
 .home .slide .collapse-handmade .sociaty ul li:hover,.home .contact .sociaty ul li:hover  {
-    background-color: white;
+  background-color: white;
 
 }
 .home .slide .collapse-handmade .sociaty ul li:hover a,.home .contact .sociaty ul li:hover a{
@@ -231,53 +235,53 @@
   min-height: 175px;
 }
 .home .tintuc .title:before{
-      background-color: #aa914d;
-    content: "";
-    display: block;
-    position: absolute;
-    height: 2px;
-    left: 0;
-    bottom: -10px;
-    width: 40px;
+  background-color: #aa914d;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
 }
 .home .tintuc .title{
   color: #252525;
-    font-size: 20px;
-    position: relative;
-    margin-bottom: 30px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 30px;
 }
 .home .tintuc .content a{
-      color: #000;
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-decoration: none;
+  color: #000;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-decoration: none;
 }
 .home .tintuc .content p{
-      margin-top: 0;
-    margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 .home .tintuc .description {
-    padding: 0 15px 0 15px;
-    min-height: 236px;
-    position: relative;
+  padding: 0 15px 0 15px;
+  min-height: 236px;
+  position: relative;
 }
 .home .tintuc .description ul{
   font-size: 14px;
-    list-style: none;
-    padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 .home .tintuc .description ul li{
   margin-top: 10px;
 }
 .home .tintuc .description ul li i{
-    width: 20px;
-    text-indent: -20px;
-    margin-right: -20px;
-    color: black;
+  width: 20px;
+  text-indent: -20px;
+  margin-right: -20px;
+  color: black;
 }
 .home .tintuc .description ul li a{
   color: #878787;
@@ -657,7 +661,4 @@
   .home .slide .carousel-control-next,.home .slide .carousel-control-prev{
     width: 30%;
   }
-}
-.ul.li.a:hover {
-  color: #aa914d;
 }
