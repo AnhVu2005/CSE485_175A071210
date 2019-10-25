@@ -1,9 +1,4 @@
-<?php 
-    session_start();
-    ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);      
- ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +34,6 @@ error_reporting(E_ALL);
         </form>
     </div>
     <?php
-    // echo password_hash("123",PASSWORD_BCRYPT);
-
     $conn = mysqli_connect('localhost','root','','useraccounts');
     if(!$conn){
         die('Khong the ket noi DB');
@@ -59,12 +52,10 @@ error_reporting(E_ALL);
             $row = mysqli_fetch_assoc($result);
             if(password_verify($password, $row['password'])){
                 $_SESSION['email']=$email;
-                header("location:index.php");// kiem tra dung thi cho vao trnag admin
-                // echo "ok";
+                header("location:index.php");
             }
             else{
                 echo 'mat khau sai';
-                // header("location:login.php");
             }
         }
 ?>
