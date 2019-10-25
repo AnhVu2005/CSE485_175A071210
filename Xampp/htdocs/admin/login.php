@@ -36,7 +36,7 @@
     <?php
     $conn = mysqli_connect('localhost','root','','useraccounts');
     if(!$conn){
-        die('Khong the ket noi DB');
+        die('Failed to connect to DB');
         };
     if (isset($_POST['email'])){
         $email = mysqli_real_escape_string($conn,$_POST['email']);
@@ -55,7 +55,7 @@
                 header("location:index.php");
             }
             else{
-                echo 'mat khau sai';
+                echo 'Username/Password is incorrect';
             }
         }
 ?>
