@@ -19,7 +19,6 @@
  die('Failed to connect to DB');
   };
   if(isset($_POST['create'])){
-    //mysqli_real_escape_string : chống các lệnh như select * from user,...
     $username = mysqli_real_escape_string($conn,$_POST['username']);
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
