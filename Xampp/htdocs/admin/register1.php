@@ -20,16 +20,15 @@
   };
   if(isset($_POST['create'])){
     //mysqli_real_escape_string : chống các lệnh như select * from user,...
-    $name = mysqli_real_escape_string($conn,$_POST['username']);
+    $username = mysqli_real_escape_string($conn,$_POST['username']);
     $email = mysqli_real_escape_string($conn,$_POST['email']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
     $password = password_hash($password,PASSWORD_BCRYPT);
     
-    $sql ="INSERT INTO users (username,email,password) VALUES('$name','$email','$password')";
+    $sql ="INSERT INTO users (username,email,password) VALUES('$username','$email','$password')";
     $result =mysqli_query($conn,$sql);
     if($result == 1){
         echo 'Successfully saved';
-        header("location:login.php");
     }else{
         echo 'There were error while saving data';
     }
